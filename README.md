@@ -9,9 +9,9 @@ Bare bones gulp-browserify-watchify-seed based off of [This overview](http://www
 2. type 'npm install' into terminal (might need to run as sudo - but shouldn't have to)
 3. type 'gulp' into terminal
 
-You should be up and runnning!
-
 ---
+
+You should be up and runnning!
 
 > Any change to main.js are watched and bundled as you save. 
 
