@@ -19,6 +19,8 @@ gulp.task('watch', function(){
       bundler.on('update', rebundle);
 
       function rebundle() {
+        //This is doing the same thing as the browserify task
+        //Pull this logic out at some point
         return bundler.bundle({debug: true})
           .pipe(source(destFile))
           .pipe(gulp.dest(destFolder));
