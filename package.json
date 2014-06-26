@@ -3,14 +3,25 @@
   "version": "0.0.1",
   "author": "Alex Hays",
   "description": "Bare bones gulp-browserify-watchify-seed",
-  "dependencies": {
-    
-  },
   "devDependencies": {
-    "browserify": "latest",
-    "watchify": "latest",
-    "gulp": "latest",
-    "vinyl-source-stream": "latest"
+    "gulp": "^3.8.3",
+    "watchify": "^0.10.2",
+    "vinyl-source-stream": "^0.1.1",        
+    "browserify": "^4.1.11",
+    "browserify-shim": "^3.6.0",
+    "gulp-concat": "^2.2.0",
+    "gulp-uglify": "^0.3.1"    
+  },
+  "browser": {
+    "jquery": "./js/vendor/jquery-2.1.1.min.js"
+  },
+  "browserify-shim": {
+    "jquery": "$"
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim"
+    ]
   },
   "scripts": {
     "build-js": "browserify js/main.js > js/bundled.js -d",

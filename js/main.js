@@ -1,5 +1,7 @@
 
-var doMath = require('./modules/doMath'); 
+var doMath = require('./modules/doMath'),
+    $ = require('jquery');
 
           //accepts "#, #, add" OR "#, #, minus"
-console.log(doMath(10, 54, "add"));
+console.log(doMath(112, 212, "add"));
+console.log($);
